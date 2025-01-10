@@ -85,6 +85,16 @@ const weatherStatus = document.querySelector(".weather p");
  else if(data.weather[0].main == "Haze"){
            weatherIcon.src = "images/mist.png";
      }
+     else if(data.weather[0].main == "Smoke"){
+           weatherIcon.src = "images/clouds.png";
+     }
+
+     else if(data.weather[0].main == "Snow"){
+           weatherIcon.src = "images/snow.png";
+     }
+     else if(data.weather[0].main == "wind"){
+           weatherIcon.src = "images/wind.png";
+     }
 
  document.querySelector(".weather").style.display = "block";
  document.querySelector(".error").style.display="none";  
